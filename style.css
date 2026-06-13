@@ -68,7 +68,7 @@ figure { margin: 0; }
   box-shadow: 0 0 28px rgba(103, 232, 249, 0.38);
   font-size: 13px; font-weight: 900;
 }
-.nav { display: flex; align-items: center; gap: 14px; color: rgba(255, 255, 255, 0.80); font-size: 13px; font-weight: 600; }
+.nav { display: flex; align-items: center; gap: 12px; color: rgba(255, 255, 255, 0.80); font-size: 12.8px; font-weight: 600; }
 .nav a {
   position: relative;
   transition: color var(--transition), transform var(--transition);
@@ -735,6 +735,41 @@ figure { margin: 0; }
   font-size: 14px;
   font-weight: 800;
 }
+.team-section {
+  padding-top: 64px;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+.team-card {
+  min-height: 250px;
+  display: grid;
+  align-content: start;
+}
+.member-avatar {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 24px;
+  border-radius: 22px;
+  color: #021118;
+  background: linear-gradient(135deg, #67e8f9, #ffffff);
+  box-shadow: 0 18px 42px rgba(14, 165, 233, 0.20);
+  font-size: 18px;
+  font-weight: 900;
+}
+.team-card h3 {
+  font-size: 20px;
+  line-height: 1.28;
+}
+.team-card p {
+  margin-top: 4px;
+  color: var(--muted);
+  line-height: 1.65;
+}
 .footer { width: min(var(--max-width), calc(100% - 40px)); margin: 0 auto 30px; padding: 20px; border-top: 1px solid rgba(14, 165, 233, 0.16); color: var(--muted); text-align: center; font-size: 14px; }
 
 /* Reveal animation */
@@ -758,6 +793,7 @@ figure { margin: 0; }
   .card-grid, .tech-grid { grid-template-columns: repeat(2, 1fr); }
   .pillar-grid { grid-template-columns: repeat(2, 1fr); }
   .canvas-grid { grid-template-columns: repeat(2, 1fr); }
+  .team-grid { grid-template-columns: repeat(2, 1fr); }
   .design-points { grid-template-columns: 1fr; }
   .design-points article { min-height: auto; }
   .media-feature,
@@ -795,6 +831,7 @@ figure { margin: 0; }
   .design-points { margin-top: 28px; }
   .section { width: calc(100% - 24px); padding: 72px 0; }
   .card-grid, .tech-grid, .pillar-grid, .canvas-grid { grid-template-columns: 1fr; }
+  .team-grid { grid-template-columns: 1fr; }
   .gallery-heading { display: grid; align-items: start; }
   .media-feature,
   .story-item {
