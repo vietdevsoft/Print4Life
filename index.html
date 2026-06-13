@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Print4Life — Chi Giả In 3D Cá Nhân Hóa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <a href="#hero" class="logo">
+      <span class="logo-icon">P4L</span>
+      <span>Print4Life</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#problem">Vấn đề</a>
+      <a href="#solution">Giải pháp</a>
+      <a href="#technology">Công nghệ</a>
+      <a href="#canvas">Canvas</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Mở menu" aria-controls="nav" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero-video" id="hero">
+      <video class="hero-bg-video" src="assets/hero-3d.mp4" poster="assets/video-poster.jpg" autoplay muted loop playsinline></video>
+      <div class="hero-overlay"></div>
+      <div class="hero-vignette"></div>
+
+      <div class="hero-center reveal">
+        <p class="eyebrow">Dự án công nghệ y sinh ứng dụng in 3D</p>
+
+        <h1 class="hero-title">
+          Print4Life
+          <span>Chi giả in 3D cá nhân hóa</span>
+        </h1>
+
+        <p class="hero-desc">
+          Giải pháp chi giả cẳng tay – bàn tay nhẹ, bền, thẩm mỹ và tối ưu chi phí bằng công nghệ in 3D. Dự án hướng đến khả năng cá nhân hóa, dễ thay thế linh kiện và hỗ trợ người khuyết chi tiếp cận thiết bị phù hợp hơn.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#solution" class="btn btn-primary">Khám phá dự án</a>
+        </div>
+
+      </div>
+    </section>
+    <!-- Problem -->
+    <section class="section" id="problem">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / Vấn đề</p>
+        <h2>Chi giả truyền thống còn nhiều rào cản</h2>
+        <p>
+          Nhiều người dùng vẫn gặp khó khăn về chi phí, thời gian chờ,
+          độ vừa vặn và tính thẩm mỹ khi tiếp cận chi giả.
+        </p>
+      </div>
+
+      <div class="card-grid">
+        <article class="glass-card reveal tilt-card">
+          <div class="card-icon">₫</div>
+          <h3>Chi phí cao</h3>
+          <p>
+            Chi giả truyền thống thường có giá thành lớn, gây khó khăn cho học sinh,
+            sinh viên và người lao động phổ thông.
+          </p>
+        </article>
+
+        <article class="glass-card reveal tilt-card">
+          <div class="card-icon">⏱</div>
+          <h3>Thời gian chờ lâu</h3>
+          <p>
+            Quy trình đo, thiết kế, đặt hàng và lắp ráp có thể kéo dài,
+            làm giảm khả năng tiếp cận nhanh của người dùng.
+          </p>
+        </article>
+
+        <article class="glass-card reveal tilt-card">
+          <div class="card-icon">✋</div>
+          <h3>Khó cá nhân hóa</h3>
+          <p>
+            Mỗi người có cấu trúc cơ thể khác nhau, nhưng nhiều sản phẩm chưa tối ưu
+            theo kích thước và nhu cầu sử dụng riêng.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Solution -->
+    <section class="section" id="solution">
+      <div class="split-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 / Giải pháp</p>
+          <h2>Chi giả in 3D cá nhân hóa theo từng người dùng</h2>
+          <p>
+            Dự án ứng dụng thiết kế 3D, quét số đo, in 3D module hóa và thử nghiệm
+            thực tế để tạo ra chi giả nhẹ, linh hoạt, dễ bảo trì.
+          </p>
+
+          <div class="feature-list">
+            <div>
+              <span>01</span>
+              <p>Thiết kế socket theo kích thước riêng.</p>
+            </div>
+
+            <div>
+              <span>02</span>
+              <p>Cấu trúc module dễ thay thế linh kiện.</p>
+            </div>
+
+            <div>
+              <span>03</span>
+              <p>Tối ưu trọng lượng, độ bền và chi phí sản xuất.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="process-card glass-card reveal tilt-card">
+          <h3>Quy trình thực hiện</h3>
+
+          <ol class="timeline">
+            <li>
+              <strong>Đo và tư vấn</strong>
+              <span>Thu thập nhu cầu, kích thước và mục tiêu sử dụng.</span>
+            </li>
+            <li>
+              <strong>Thiết kế 3D</strong>
+              <span>Dựng mẫu socket, khớp, vỏ và hệ truyền động.</span>
+            </li>
+            <li>
+              <strong>In 3D</strong>
+              <span>Sản xuất bằng vật liệu nhẹ, bền, phù hợp thử nghiệm.</span>
+            </li>
+            <li>
+              <strong>Lắp ráp & kiểm thử</strong>
+              <span>Điều chỉnh độ vừa vặn, độ bám và khả năng thao tác.</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology -->
+    <section class="section" id="technology">
+      <div class="section-heading reveal">
+        <p class="eyebrow">03 / Công nghệ</p>
+        <h2>Nền tảng kỹ thuật của sản phẩm</h2>
+      </div>
+
+      <div class="tech-grid">
+        <article class="glass-card reveal tilt-card">
+          <h3>Thiết kế CAD 3D</h3>
+          <p>
+            Mô hình hóa chi tiết socket, khớp cổ tay, ngón cơ khí, dây truyền lực
+            và lớp vỏ thẩm mỹ.
+          </p>
+        </article>
+
+        <article class="glass-card reveal tilt-card">
+          <h3>In 3D FDM</h3>
+          <p>
+            Tạo mẫu nhanh, tối ưu chi phí, dễ tinh chỉnh thiết kế sau mỗi vòng thử nghiệm.
+          </p>
+        </article>
+
+        <article class="glass-card reveal tilt-card">
+          <h3>Module hóa linh kiện</h3>
+          <p>
+            Các bộ phận như ngón, khớp, dây kéo, đai cố định có thể thay thế riêng.
+          </p>
+        </article>
+
+        <article class="glass-card reveal tilt-card">
+          <h3>Tùy chỉnh thẩm mỹ</h3>
+          <p>
+            Cho phép thay đổi màu sắc, hình dạng vỏ ngoài và phong cách thiết kế.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Business Model Canvas -->
+    <section class="section" id="canvas">
+      <div class="section-heading reveal">
+        <p class="eyebrow">04 / Business Model Canvas</p>
+        <h2>Mô hình kinh doanh dự án</h2>
+        <p>
+          Mô hình tập trung vào khả năng tiếp cận, cá nhân hóa sản phẩm và triển khai
+          tại khu vực đô thị như Tân Phú, Tân Bình, Bình Tân.
+        </p>
+      </div>
+
+      <div class="canvas-grid">
+        <article class="canvas-card reveal">
+          <h3>Đối tác chính</h3>
+          <p>Bệnh viện, phòng khám chỉnh hình, trường học, xưởng in 3D, tổ chức xã hội.</p>
+        </article>
+
+        <article class="canvas-card reveal">
+          <h3>Hoạt động chính</h3>
+          <p>Đo số, thiết kế 3D, in 3D, lắp ráp, thử nghiệm, bảo trì và cải tiến sản phẩm.</p>
+        </article>
+
+        <article class="canvas-card reveal">
+          <h3>Giá trị cung cấp</h3>
+          <p>Chi giả nhẹ, cá nhân hóa, chi phí tối ưu, thẩm mỹ tốt, dễ thay linh kiện.</p>
+        </article>
+
+        <article class="canvas-card reveal">
+          <h3>Quan hệ khách hàng</h3>
+          <p>Tư vấn trực tiếp, hỗ trợ sau bàn giao, bảo trì định kỳ, đồng hành điều chỉnh.</p>
+        </article>
+
+        <article class="canvas-card reveal">
+          <h3>Phân khúc khách hàng</h3>
+          <p>Người cần chi giả, học sinh, sinh viên, người lao động, trung tâm phục hồi chức năng.</p>
+        </article>
+
+        <article class="canvas-card reveal">
+          <h3>Nguồn lực chính</h3>
+          <p>Đội thiết kế, máy in 3D, vật liệu, dữ liệu số đo, quy trình kiểm thử.</p>
+        </article>
+
+        <article class="canvas-card reveal">
+          <h3>Kênh tiếp cận</h3>
+          <p>Website, mạng xã hội, trường học, bệnh viện, hội nhóm cộng đồng, workshop.</p>
+        </article>
+
+        <article class="canvas-card reveal">
+          <h3>Cơ cấu chi phí</h3>
+          <p>Vật liệu in, máy móc, thiết kế, nhân sự, thử nghiệm, marketing và bảo trì.</p>
+        </article>
+
+        <article class="canvas-card reveal">
+          <h3>Dòng doanh thu</h3>
+          <p>Bán sản phẩm, gói bảo trì, thay linh kiện, tài trợ xã hội và hợp tác tổ chức.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Showcase -->
+    <section class="section" id="showcase">
+      <div class="section-heading reveal">
+        <p class="eyebrow">05 / Showcase video 3D</p>
+        <h2>Trực quan hóa sản phẩm bằng mô hình 3D</h2>
+        <p>
+          Video giúp người xem quan sát hình dáng, cấu trúc, màu sắc và phong cách
+          thiết kế của chi giả in 3D.
+        </p>
+      </div>
+
+      <div class="showcase-frame reveal">
+        <video
+          src="assets/hero-3d.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          controls
+        ></video>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="contact-box glass-card reveal">
+        <div>
+          <p class="eyebrow">06 / Liên hệ</p>
+          <h2>Sẵn sàng triển khai thử nghiệm</h2>
+          <p>
+            Dự án hướng tới thử nghiệm thực tế, thu thập phản hồi người dùng
+            và tối ưu thiết kế qua từng phiên bản.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a href="mailto:contact@print4life.vn" class="btn btn-primary">
+            Gửi email
+          </a>
+          <a href="#hero" class="btn btn-outline">
+            Quay lại đầu trang
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Print4Life — In 3D, trao cơ hội, kiến tạo tương lai.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
