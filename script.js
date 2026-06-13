@@ -10,6 +10,8 @@
   const revealItems = Array.from(document.querySelectorAll('.reveal'));
   const navLinks = Array.from(document.querySelectorAll('.nav a[href^="#"]'));
   const sections = Array.from(document.querySelectorAll('main section[id]'));
+  const contactForm = document.getElementById('contactForm');
+  const formMessage = document.getElementById('formMessage');
 
   const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
   const easeOutQuart = (value) => 1 - Math.pow(1 - value, 4);
@@ -202,6 +204,14 @@
         tiltFrame = null;
         card.style.transform = '';
       });
+    });
+  }
+
+  if (contactForm && formMessage) {
+    contactForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      formMessage.textContent = 'Cảm ơn bạn. Print4Life sẽ liên hệ lại trong thời gian sớm nhất.';
+      contactForm.reset();
     });
   }
 })();
