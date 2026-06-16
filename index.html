@@ -26,8 +26,8 @@
       <a href="#design">Thiết kế</a>
       <a href="#technology">Công nghệ</a>
       <a href="#pricing">Chi phí</a>
-      <a href="#contact">Liên hệ</a>
       <a href="#team">Đội ngũ</a>
+      <a href="#contact">Liên hệ</a>
     </nav>
 
     <button class="menu-btn" id="menuBtn" aria-label="Mở menu" aria-controls="nav" aria-expanded="false">
@@ -242,7 +242,7 @@
         <div class="media-feature-list">
           <article class="media-feature glass-card tilt-card">
             <figure>
-              <img src="img/print4life-infographic.png" alt="Infographic giải pháp chi giả in 3D Print4Life">
+              <img src="img/5be80cb3-dbfd-4be4-83f6-0d1213d9b7ad.png" alt="Infographic giải pháp chi giả in 3D Print4Life">
             </figure>
             <div>
               <span class="mini-index">01</span>
@@ -479,21 +479,26 @@
         </article>
       </div>
 
-      <article class="spline-showcase glass-card reveal">
-        <div class="spline-frame">
-          <spline-viewer url="https://prod.spline.design/oNYwjCxxmgSiK6m3/scene.splinecode"></spline-viewer>
+      <article class="model-showcase glass-card reveal">
+        <div class="model-frame">
+          <model-viewer
+            src="model/prosthetic%20arm%203d%20model.glb"
+            alt="Mô hình 3D chi giả cẳng tay Print4Life"
+            camera-controls
+            auto-rotate
+            shadow-intensity="0.65"
+            exposure="1"
+            camera-orbit="0deg 75deg 2.8m"
+            field-of-view="30deg"
+            interaction-prompt="auto">
+          </model-viewer>
         </div>
-        <div class="spline-copy">
+        <div class="model-copy">
           <p class="eyebrow">Mô hình 3D tương tác</p>
           <h3>Khám phá cấu trúc cánh tay ngay trên website</h3>
           <p>
             Người xem có thể xoay, quan sát và cảm nhận rõ hơn cấu trúc tổng thể của mẫu chi giả cẳng tay - bàn tay trước khi đi vào các hình ảnh thực tế.
           </p>
-          <div class="spline-points">
-            <span>Socket cá nhân hóa</span>
-            <span>Khung cẳng tay mô-đun</span>
-            <span>Bàn tay cơ khí nhiều đốt</span>
-          </div>
         </div>
       </article>
 
@@ -700,51 +705,10 @@
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="section contact-section" id="contact">
-      <div class="contact-box glass-card reveal">
-        <div class="contact-copy">
-          <p class="eyebrow">12 / Liên hệ</p>
-          <h2>Bạn muốn tư vấn hoặc hợp tác với Print4Life?</h2>
-          <p>
-            Liên hệ với nhóm phát triển để được tư vấn, khảo sát nhu cầu hoặc trao đổi về hợp tác thử nghiệm mô hình chi giả in 3D.
-          </p>
-
-          <div class="contact-details">
-            <p><strong>Dự án:</strong> Print4Life</p>
-            <p><strong>Lĩnh vực:</strong> 3D Printed Prosthetics</p>
-            <p><strong>Khu vực thử nghiệm:</strong> Tân Phú, Tân Bình, Bình Tân, TP.HCM</p>
-            <p><strong>Email:</strong> <a href="mailto:print4life.contact@gmail.com">print4life.contact@gmail.com</a></p>
-          </div>
-        </div>
-
-        <form class="contact-form" id="contactForm">
-          <label>
-            <span>Họ và tên</span>
-            <input type="text" name="name" autocomplete="name" required>
-          </label>
-          <label>
-            <span>Số điện thoại</span>
-            <input type="tel" name="phone" autocomplete="tel" required>
-          </label>
-          <label>
-            <span>Email</span>
-            <input type="email" name="email" autocomplete="email" required>
-          </label>
-          <label>
-            <span>Nhu cầu</span>
-            <textarea name="message" rows="4" required></textarea>
-          </label>
-          <button type="submit" class="btn btn-primary">Gửi thông tin</button>
-          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
-        </form>
-      </div>
-    </section>
-
     <!-- Team -->
     <section class="section team-section" id="team">
       <div class="section-heading reveal">
-        <p class="eyebrow">13 / Đội ngũ dự án</p>
+        <p class="eyebrow">12 / Đội ngũ dự án</p>
         <h2>Những thành viên tham gia phát triển Print4Life</h2>
         <p>
           Print4Life được xây dựng bởi nhóm sinh viên cùng quan tâm đến công nghệ in 3D, thiết kế sản phẩm và các giải pháp hỗ trợ người khuyết chi tiếp cận thiết bị phù hợp hơn.
@@ -784,6 +748,47 @@
 
       </div>
     </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="contact-box glass-card reveal">
+        <div class="contact-copy">
+          <p class="eyebrow">13 / Liên hệ</p>
+          <h2>Bạn muốn tư vấn hoặc hợp tác với Print4Life?</h2>
+          <p>
+            Liên hệ với nhóm phát triển để được tư vấn, khảo sát nhu cầu hoặc trao đổi về hợp tác thử nghiệm mô hình chi giả in 3D.
+          </p>
+
+          <div class="contact-details">
+            <p><strong>Dự án:</strong> Print4Life</p>
+            <p><strong>Lĩnh vực:</strong> 3D Printed Prosthetics</p>
+            <p><strong>Khu vực thử nghiệm:</strong> Tân Phú, Tân Bình, Bình Tân, TP.HCM</p>
+            <p><strong>Email:</strong> <a href="mailto:print4life.contact@gmail.com">print4life.contact@gmail.com</a></p>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <label>
+            <span>Họ và tên</span>
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>
+            <span>Số điện thoại</span>
+            <input type="tel" name="phone" autocomplete="tel" required>
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>
+            <span>Nhu cầu</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Gửi thông tin</button>
+          <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -791,6 +796,6 @@
   </footer>
 
   <script src="script.js"></script>
-  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.97/build/spline-viewer.js"></script>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </body>
 </html>

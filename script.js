@@ -9,7 +9,9 @@
   const heroVideo = document.querySelector('.hero-bg-video');
   const revealItems = Array.from(document.querySelectorAll('.reveal'));
   const navLinks = Array.from(document.querySelectorAll('.nav a[href^="#"]'));
-  const sections = Array.from(document.querySelectorAll('main section[id]'));
+  const sections = navLinks
+    .map((link) => document.getElementById(link.getAttribute('href')?.slice(1) || ''))
+    .filter(Boolean);
   const contactForm = document.getElementById('contactForm');
   const formMessage = document.getElementById('formMessage');
 
@@ -213,35 +215,6 @@
       });
     });
   }
-
-  const clearSplineBackground = (viewer) => {
-    if (!viewer) return;
-
-    viewer.style.background = 'transparent';
-
-    if (viewer.shadowRoot && !viewer.shadowRoot.querySelector('[data-print4life-spline-style]')) {
-      const style = document.createElement('style');
-      style.setAttribute('data-print4life-spline-style', '');
-      style.textContent = '#container, #spline, canvas { background: transparent !important; }';
-      viewer.shadowRoot.appendChild(style);
-    }
-
-    const shadowContainer = viewer.shadowRoot?.querySelector('#container');
-    const shadowCanvas = viewer.shadowRoot?.querySelector('canvas');
-    const lightCanvas = viewer.querySelector?.('canvas');
-    const canvas = shadowCanvas || lightCanvas;
-
-    if (shadowContainer) shadowContainer.style.background = 'transparent';
-    if (canvas) canvas.style.background = 'transparent';
-  };
-
-  document.querySelectorAll('spline-viewer').forEach((viewer) => {
-    clearSplineBackground(viewer);
-    viewer.addEventListener('load', () => clearSplineBackground(viewer));
-
-    window.setTimeout(() => clearSplineBackground(viewer), 600);
-    window.setTimeout(() => clearSplineBackground(viewer), 1600);
-  });
 
   if (contactForm && formMessage) {
     contactForm.addEventListener('submit', (event) => {
